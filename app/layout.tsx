@@ -1,15 +1,16 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import Head from 'next/head'
 
 export const metadata: Metadata = {
-  title: 'C4 Model Prático - Transforme Complexidade em Clareza',
+  title: 'C4 Model Prático - Transforme complexidade em clareza',
   description: 'Minicurso prático de C4 Model para CTOs, arquitetos e tech leaders. Aprenda a criar diagramas de arquitetura claros e eficazes.',
   keywords: 'C4 Model, arquitetura de software, documentação técnica, Structurizr, tech leaders, CTO',
   authors: [{ name: 'Emerson Almeida' }],
   openGraph: {
     title: 'C4 Model Prático - Transforme Complexidade em Clareza',
     description: 'Minicurso prático de C4 Model para CTOs, arquitetos e tech leaders.',
-    url: 'https://c4modelpratico.com.br',
+    url: 'https://www.c4modelpratico.com.br',
     siteName: 'C4 Model Prático',
     locale: 'pt_BR',
     type: 'website',
@@ -32,7 +33,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR" className="scroll-smooth">
-      <body className="font-sans">{children}</body>
+        <body className="font-sans">{children}</body>
     </html>
   )
 }

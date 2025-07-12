@@ -1,5 +1,6 @@
 'use client'
 
+import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Home() {
@@ -21,11 +22,11 @@ export default function Home() {
               <a href="#modulos" className="text-gray-600 hover:text-primary transition-colors">Módulos</a>
               <a href="#instrutor" className="text-gray-600 hover:text-primary transition-colors">Instrutor</a>
               <a href="#faq" className="text-gray-600 hover:text-primary transition-colors">FAQ</a>
-              <a href="https://hotmart.com/pt-br/marketplace/produtos/c4-model-desenho-de-arquitetura-pratica-para-tech-leaders/J100276778N" 
+              <a href="https://hotm.art/kUZwOSDg" 
                  target="_blank" 
                  rel="noopener noreferrer"
                  className="btn-primary">
-                Inscrever-se Agora
+                Inscrever-se agora
               </a>
             </div>
             <div className="md:hidden flex items-center">
@@ -47,10 +48,10 @@ export default function Home() {
               <a href="#modulos" className="block px-3 py-2 text-gray-600 hover:text-primary">Módulos</a>
               <a href="#instrutor" className="block px-3 py-2 text-gray-600 hover:text-primary">Instrutor</a>
               <a href="#faq" className="block px-3 py-2 text-gray-600 hover:text-primary">FAQ</a>
-              <a href="https://hotmart.com/pt-br/marketplace/produtos/c4-model-desenho-de-arquitetura-pratica-para-tech-leaders/J100276778N" 
+              <a href="https://hotm.art/kUZwOSDg" 
                  target="_blank" 
                  rel="noopener noreferrer"
-                 className="block px-3 py-2 btn-primary text-center">
+                 className="hotmart-fb hotmart__button-checkout  block px-3 py-2 btn-primary text-center">
                 Inscrever-se Agora
               </a>
             </div>
@@ -60,24 +61,25 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="pt-20 pb-16 bg-gradient-to-br from-blue-50 to-indigo-100">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto py-8 lg:py-20 px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Transforme a <span className="text-primary">Complexidade</span> em <span className="text-primary">Clareza</span>
+              Transforme a <span className="text-primary">complexidade</span> em <span className="text-primary">clareza</span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-4xl mx-auto">
               Domine o C4 Model e aprenda a criar diagramas de arquitetura que realmente comunicam. 
-              Prático, direto ao ponto e focado em resultados para CTOs, arquitetos e tech leaders.
+              Prático, direto ao ponto e focado em resultados para <strong>CTOs, arquitetos, tech leaders e desenvolvedores sêniors</strong>.
             </p>
+            
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href="https://hotmart.com/pt-br/marketplace/produtos/c4-model-desenho-de-arquitetura-pratica-para-tech-leaders/J100276778N" 
+              <a href="https://hotm.art/kUZwOSDg" 
                  target="_blank" 
                  rel="noopener noreferrer"
                  className="btn-primary text-lg px-8 py-4">
-                Quero Começar Agora
+                Quero começar agora
               </a>
               <a href="#curso" className="btn-secondary text-lg px-8 py-4">
-                Conhecer o Curso
+                Conhecer o curso
               </a>
             </div>
           </div>
@@ -99,7 +101,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L3.732 16.5c-.77.833.192 2.5 1.732 2.5z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Documentação Desatualizada</h3>
+              <h3 className="text-xl font-semibold mb-3">Documentação desatualizada</h3>
               <p className="text-gray-600">
                 Diagramas que não refletem a realidade do sistema, criando confusão e decisões erradas.
               </p>
@@ -110,7 +112,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Falhas de Comunicação</h3>
+              <h3 className="text-xl font-semibold mb-3">Falhas de comunicação</h3>
               <p className="text-gray-600">
                 Dificuldade para explicar arquitetura para stakeholders não técnicos e desenvolvedores.
               </p>
@@ -121,7 +123,7 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="text-xl font-semibold mb-3">Débito Técnico</h3>
+              <h3 className="text-xl font-semibold mb-3">Débito técnico</h3>
               <p className="text-gray-600">
                 Falta de visão clara da arquitetura dificulta refatorações e evoluções do sistema.
               </p>
@@ -135,7 +137,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              A Solução: C4 Model Prático
+              A Solução: C4 Model prático
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Uma abordagem sistemática e prática para criar diagramas de arquitetura que realmente funcionam.
@@ -159,7 +161,7 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span><strong>Modelagem Prática</strong> - Crie diagramas de Contexto, Contêiner e Componentes com um caso real</span>
+                  <span><strong>Modelagem prática</strong> - Crie diagramas de Contexto, Contêiner e Componentes com um caso real</span>
                 </li>
                 <li className="flex items-start">
                   <div className="text-green-500 mr-3">
@@ -175,21 +177,21 @@ export default function Home() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
-                  <span><strong>Adoção Estratégica</strong> - Como implementar na sua equipe e manter a documentação sempre atual</span>
+                  <span><strong>Adoção estratégica</strong> - Como implementar na sua equipe e manter a documentação sempre atual</span>
                 </li>
               </ul>
             </div>
             <div className="bg-gradient-to-br from-blue-50 to-indigo-100 p-8 rounded-lg">
-              <h4 className="text-xl font-semibold mb-4">Resultado Garantido:</h4>
+              <h4 className="text-xl font-semibold mb-4">Resultado garantido:</h4>
               <p className="text-gray-700 mb-6">
                 Ao final do curso, você terá as ferramentas e conhecimento para criar diagramas de arquitetura 
                 que realmente comunicam, facilitam decisões e mantêm sua equipe alinhada.
               </p>
-              <a href="https://hotmart.com/pt-br/marketplace/produtos/c4-model-desenho-de-arquitetura-pratica-para-tech-leaders/J100276778N" 
+              <a href="https://hotm.art/kUZwOSDg" 
                  target="_blank" 
                  rel="noopener noreferrer"
                  className="btn-primary w-full text-center block">
-                Garantir Minha Vaga
+                Garantir minha vaga
               </a>
             </div>
           </div>
@@ -201,7 +203,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Módulos do Curso
+              Módulos do curso
             </h2>
             <p className="text-xl text-gray-600">
               Conteúdo estruturado e prático, direto ao ponto
@@ -226,7 +228,7 @@ export default function Home() {
             <div className="bg-white p-8 rounded-lg shadow-md">
               <div className="flex items-center mb-4">
                 <span className="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4">2</span>
-                <h3 className="text-2xl font-bold">Modelagem Prática</h3>
+                <h3 className="text-2xl font-bold">Modelagem prática</h3>
               </div>
               <p className="text-gray-600 mb-4">
                 Comece esboçando suas arquiteturas de forma rápida e colaborativa, definindo o escopo de um sistema real.
@@ -241,7 +243,7 @@ export default function Home() {
             <div className="bg-white p-8 rounded-lg shadow-md border-2 border-primary">
               <div className="flex items-center mb-4">
                 <span className="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center font-bold mr-4">+</span>
-                <h3 className="text-2xl font-bold">Módulos Extras</h3>
+                <h3 className="text-2xl font-bold">Módulos extras</h3>
               </div>
               <div className="space-y-4">
                 <div>
@@ -272,15 +274,17 @@ export default function Home() {
           </div>
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="text-center">
-              <div className="w-48 h-48 bg-gray-300 rounded-full mx-auto mb-6"></div>
+              <div className="w-48 h-48 bg-gray-300 rounded-full mx-auto mb-6">
+                <img src="/emerson-almeida.jpg" alt="Emerson Almeida" className="w-full h-full object-cover rounded-full" />
+              </div>
               <h3 className="text-2xl font-bold mb-2">Emerson Almeida</h3>
               <p className="text-primary font-semibold">Tech Leader & Arquiteto de Software</p>
             </div>
             <div>
-              <h4 className="text-xl font-semibold mb-4">Experiência Prática em Arquitetura</h4>
+              <h4 className="text-xl font-semibold mb-4">Experiência prática em arquitetura</h4>
               <p className="text-gray-600 mb-6">
                 Com anos de experiência liderando equipes técnicas e desenhando arquiteturas escaláveis, 
-                Emerson entende os desafios reais que CTOs e tech leaders enfrentam no dia a dia.
+                Emerson, também conhecido como Duke, entende os desafios reais que CTOs e tech leaders enfrentam no dia a dia.
               </p>
               <ul className="space-y-3 text-gray-600">
                 <li className="flex items-start">
@@ -295,6 +299,15 @@ export default function Home() {
                   <span className="text-primary mr-2">✓</span>
                   Focado em soluções práticas e diretas ao ponto
                 </li>
+                <li>
+                  <span className="text-primary mr-2">✓</span>
+                  Instrutor apaixonado por compartilhar conhecimento e ajudar profissionais a evoluírem
+                </li>
+                <li className="flex items-start">
+                  <span className="text-primary mr-2">✓</span>
+                  Acesse o Linkedin e confere você mesmo:{" "}<a target="_blank" 
+                 rel="noopener noreferrer" className='underline text-blue-500 px-1' href="https://www.linkedin.com/in/dukex/" >linkedin.com/in/dukex</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -306,7 +319,7 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-              Perguntas Frequentes
+              Perguntas frequentes
             </h2>
           </div>
           <div className="space-y-6">
@@ -367,12 +380,12 @@ export default function Home() {
       <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Pronto para Transformar sua Arquitetura?
+            Pronto para transformar sua Arquitetura?
           </h2>
           <p className="text-xl mb-8">
             Junte-se aos profissionais que já estão criando diagramas mais claros e eficazes.
           </p>
-          <a href="https://hotmart.com/pt-br/marketplace/produtos/c4-model-desenho-de-arquitetura-pratica-para-tech-leaders/J100276778N" 
+          <a href="https://hotm.art/kUZwOSDg" 
              target="_blank" 
              rel="noopener noreferrer"
              className="inline-block bg-white text-primary font-bold py-4 px-8 rounded-lg text-lg hover:bg-gray-100 transition-colors">
