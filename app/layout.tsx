@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Head from 'next/head'
+import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: 'C4 Model Prático - Transforme complexidade em clareza',
@@ -34,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className="scroll-smooth">
         <body className="font-sans">{children}</body>
+        <GoogleAnalytics gaId="G-1JLSQSMN7T" />
     </html>
   )
 }
